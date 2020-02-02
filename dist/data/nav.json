@@ -1,0 +1,135 @@
+[
+    {
+        "title": "男的",
+        "nav": [
+            {"id":0,
+                "img": "images/boy1.jpg",
+                "info": "踩的"
+            },
+            {"id":1,
+                "img": "images/boy2.jpg",
+                "info": "穿的"
+            },
+            {"id":2,
+                "img": "images/boy3.jpg",
+                "info": "T恤"
+            },
+            {"id":3,
+                "img": "images/boy4.jpg",
+                "info": "戴的"
+            },
+            {"id":4,
+                "img": "images/boy5.jpg",
+                "info": "新产品"
+            },
+            {"id":5,
+                "img": "images/boy6.jpg",
+                "info": "优惠"
+            },
+            {"id":6,
+                "img": "images/boy7.jpg",
+                "info": "经典款"
+            },
+            {"id":7,
+                "img": "images/boy8.jpg",
+                "info": "CHUCK 70"
+            },
+            {"id":8,
+                "img": "images/boy9.jpg",
+                "info": "ONE STAR"
+            },
+            {"id":9,
+                "img": "images/boy10.jpg",
+                "info": "ALL STAR"
+            },
+            {"id":10,
+                "img": "images/boy11.jpg",
+                "info": "CONS"
+            },
+            {"id":11,
+                "img": "images/boy12.jpg",
+                "info": "JACK PURCELL"
+            }
+        ]
+    },
+    {
+        "title": "女的",
+        "nav": [
+            {"id":0,
+                "img": "images/gir1.jpg",
+                "info": "踩的"
+            },
+            {"id":1,
+                "img": "images/girl2.jpg",
+                "info": "穿的"
+            },
+            {"id":2,
+                "img": "images/girl3.jpg",
+                "info": "T恤"
+            },
+            {"id":3,
+                "img": "images/girl4.jpg",
+                "info": "戴的"
+            },
+            {"id":4,
+                "img": "images/boy5.jpg",
+                "info": "新产品"
+            },
+            {"id":5,
+                "img": "images/boy6.jpg",
+                "info": "优惠"
+            },
+            {"id":6,
+                "img": "images/boy7.jpg",
+                "info": "经典款"
+            },
+            {"id":7,
+                "img": "images/girl5.jpg",
+                "info": "CHUCK 70"
+            },
+            {"id":8,
+                "img": "images/girl6.jpg",
+                "info": "ONE STAR"
+            },
+            {"id":9,
+                "img": "images/girl7.jpg",
+                "info": "ALL STAR"
+            },
+            {"id":10,
+                "img": "images/girl8.jpg",
+                "info": "CONS"
+            },
+            {"id":11,
+                "img": "images/girl9.jpg",
+                "info": "JACK PURCELL"
+            }
+        ]
+    },
+    {
+        "title": "儿童",
+        "nav": [
+            {"id":0,
+                "img": "images/ch1.jpg",
+                "info": "(1-4岁)"
+            },
+            {"id":1,
+                "img": "images/ch2.jpg",
+                "info": "(4-8岁)"
+            },
+            {"id":2,
+                "img": "images/ch3.jpg",
+                "info": "(4-12岁)"
+            },
+            {"id":3,
+                "img": "images/ch4.jpg",
+                "info": "(8-12岁)"
+            }
+        ]
+    },
+    {
+        "title": "联名合作款"
+    },
+    {
+        "title": "店铺分布"
+    }
+]

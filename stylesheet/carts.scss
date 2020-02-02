@@ -1,0 +1,680 @@
+@import "base";
+
+$width:1196px;
+$margin:0 auto;
+/* top */
+.topbox{
+    background: rgb(0,0,0);
+    .top{
+        margin: $margin;
+        // background: red;
+        width: $width;
+        height: 80px;
+        .logo{
+            line-height: 80px;
+        }
+        .top_right{
+            $bgColor:rgb(70,70,70);
+            @mixin iconStyle {
+                background: $bgColor;
+                // font-size: 26px;
+                width: 30px;
+                height: 30px;
+                line-height:30px;
+                text-align: center;
+                font-size: 22px;
+                border-radius: 50%;
+                margin:25px 0;
+                color: #fff;
+                cursor: pointer;
+                &:hover{
+                    background: rgb(189,189,189);
+                }
+            }
+            float:right;
+            width: 464px;
+            .login{
+                float:left;
+                font-size: 14px;
+                line-height: 80px;
+                color: #fff;
+                a{color: #fff;}
+                span{
+                    margin: 0 3px; 
+                }
+            }
+            .login_icon{
+                @extend .login;
+                @include iconStyle();
+                margin-left: 12px;
+                font-size: 18px;
+            }
+            .shop_car{
+                @extend .login;
+                margin: 0 15px 0 30px;
+                font-size: 14px;
+                color: #fff;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            .shop_car_icon{
+                @extend .login;
+                @include iconStyle();
+                background: rgb(148,0,0);
+                cursor: default;
+                &:hover{background: rgb(148,0,0);}
+            }
+            .chat_icon{
+                @extend .login;
+                @include iconStyle();
+                margin: 25px 47px;
+            }
+            .search_icon{
+                @extend .login;
+                @include iconStyle();
+                margin-right: 47px;
+            }
+            .help_icon{
+                @extend .login;
+                @include iconStyle();
+            }
+        }
+    }
+    .hidden_top{
+        width: 100%;
+        background: #fff;
+        overflow: hidden;
+        .login{
+            width: $width;
+            margin: $margin;
+            overflow: hidden;
+            .login_left{
+                margin-left: 317px;
+                margin-right: 60px;
+                float: left;
+                overflow: hidden;
+                h1{
+                    font-size: 24px;
+                    margin-top: 37px;
+    margin-bottom: 20px;
+                }
+                .login_block{
+                    float: left;
+                    width: 150px;
+                    height: 40px;
+                    border: 1px solid #000;
+                    font-size: 18px;
+                    line-height: 40px;
+                    text-align: center;
+                    margin-bottom: 20px;
+                    background: #000;
+                    color:#fff;
+                    span{
+                        margin-left: 10px;
+                        font-size: 24px;
+                        font-weight: 900;
+                    }
+                    &:hover{
+                        background: #fff;
+                        color:#000;
+                        cursor: pointer;
+                        transition: background 0.3s;
+                    }
+                }
+            }
+            .login_right{
+                float: left;
+                padding-left: 60px;
+                border-left: 1px solid #999;
+                overflow: hidden;
+                h1{
+                    font-size: 24px;
+                    margin-top: 37px;
+    margin-bottom: 20px;
+                }
+                input{
+                    border: 1px solid #999;
+    width: 100%;
+    height: 40px;
+    line-height: 30px;
+    padding: 5px 5px 5px 18px;
+    box-sizing: border-box;
+    font-family: "tradegothic";
+                }
+                input:first-of-type{
+                    margin-bottom: 25px;
+                }
+                .checkcode{
+                    width: 50%;
+                    margin-top: 20px;
+                    float: left;
+                }
+                .codebox{
+                    display:inline-block;
+                    width: 40%;
+                    margin:20px 0 0 40px;
+                    height: 40px;
+                    background-color: #000;
+                    color: #fff;
+                    line-height: 40px;
+                    text-align: center;
+                    font-weight: 900;
+                    // font-size: 16px;
+                }
+                .login_waring{
+                    margin-top: 15px;
+                    margin-bottom: 50px;
+                    input{
+                        width: 22px;
+                    height: 22px;
+                    padding: 0;
+                    float: left;
+                    }
+                    .info{
+                        margin-left: 5px;
+                        float: left;
+                    }
+                }
+                .login_btn{
+                    width: 357px;
+                    color: #fff;
+                    cursor: pointer;
+                    font-size: 18px;
+                    height: 40px;
+                    line-height: 38px;
+                    text-align: center;
+                    border: 1px solid #000;
+                    background: rgb(204,204,204);
+                    margin-bottom: 5px;
+                }
+                .forget{
+                    input{
+                        width: 22px;
+                    height: 22px;
+                    padding: 0;
+                    float: left;
+                    }
+                    span{
+                        margin-left: 5px;
+                    }
+                    a{
+                        float: right;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .register{
+
+            width: $width;
+            margin: $margin;
+            overflow: hidden;
+            .reg_left{
+                float: left;
+                margin-left: 105px;
+                overflow: hidden;
+                div{
+                    font-size: 14px;
+                    margin-top: 30px;margin-bottom: 5px;
+                    span{
+                        margin-left: 5px;
+                        color:red;
+                    }
+                }
+                input{
+                    border: 1px solid #999;
+                    width: 299px;
+                    height: 40px;
+                    line-height: 30px;
+                    border: 1px solid #999;
+    padding: 5px 5px 5px 18px;
+    box-sizing: border-box;
+    font-family: "tradegothic";
+                }
+            }
+            .reg_cen{
+                @extend .reg_left;
+                margin-left: 40px;
+                overflow: hidden;
+                .checkcode{
+                    width: 149px;
+                }
+                .codebox{
+                    display:inline-block;
+                    width: 100px;
+                    margin-left: 40px;
+                    height: 40px;
+                    background-color: #000;
+                    color: #fff;
+                    line-height: 40px;
+                    text-align: center;
+                    font-weight: 900;
+                    font-size: 20px;
+                }
+            }
+            .reg_right{
+                @extend .reg_left;
+                div:nth-of-type(2){
+                    margin-top: 45px;
+                }
+                input{
+                    width: 22px;
+                    height: 22px;
+                    border: 2px solid #000;
+                }
+               
+                span{
+                    margin-left: 5px;
+                }
+                input:nth-of-type(2){
+                    margin-left: 80px;
+                }
+                select{
+                    width: 60px;
+                    height: 40px;
+                }
+                select:nth-of-type(2){
+                    margin: 0 10px;
+                }
+                .check{
+                    input{
+                        width: 22px;
+                        height: 22px;
+                    }
+                    span{
+                        white-space: nowrap;
+                        color:#333;
+                    }
+                }
+                .reg_btn{
+                    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    width: 300px;
+    background: rgb(204,204,204);
+    border: 1px solid #000;
+                }
+            }
+        }
+        .search{
+            width: $width;
+            margin: $margin;
+            overflow: hidden;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            input{
+                margin-left:110px ;
+                line-height: 40px;
+    color: rgb(153, 153, 153);
+    font-size: 24px;
+    border: none;
+    outline: none;
+            }
+            i{  display: inline-block;
+                width: 32px;
+                height: 32px;
+                font-size: 20px;
+                line-height: 32px;
+                text-align: center;
+                background: #333;
+                color:#fff;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+            i:first-of-type{
+                margin: 0 20px 0 650px;
+            }
+        }
+    }
+}
+
+/* cont */
+.contbox{
+    .cont{
+        // background: darkcyan;
+        width: 1100px;
+        margin: $margin;
+        .car_null{
+            width: 1100px;
+            overflow: hidden;
+            ul{
+                margin:66px 0 10px 314px;
+                overflow: hidden;
+                li{
+                    float: left;
+                    font-size: 16px;
+                }
+                li:nth-of-type(2){
+                    margin: 0 85px;
+                }
+            }
+            .pointbox{
+                // overflow: hidden;
+                margin-left: 350px;
+                p{
+                    display: inline-block;
+                }
+                .point{
+                    width: 18px;
+                    height: 18px;
+                    border: 1px solid #000;
+                    border-radius: 50%;
+                }
+                .line{
+                    width: 142px;
+                    height: 1px;
+                    background: #999;
+                    position: relative;
+                    bottom: 9px;
+                }
+                .active{background: #000;}
+            }
+            h2{
+                margin: 60px 0 85px 414px;
+                font-size: 26px;
+                color: #333;
+            }
+            .shop_btn{
+                display: block;
+                width: 200px;
+                height: 50px;
+                line-height: 50px;
+                font-size: 18px;
+                color: #fff;
+                text-align: center;
+                background: rgb(182,51,48);
+                margin-left: 434px;
+                margin-bottom: 200px;
+            }
+        }
+        .shopcont{
+            width: 1100px;
+            overflow: hidden;
+            ul{
+                margin:66px 0 10px 410px;
+                overflow: hidden;
+                li{
+                    float: left;
+                    font-size: 16px;
+                }
+                li:nth-of-type(2){
+                    margin: 0 85px;
+                }
+            }
+            .pointbox{
+                // overflow: hidden;
+                margin-left: 445px;
+                p{
+                    display: inline-block;
+                }
+                .point{
+                    width: 18px;
+                    height: 18px;
+                    border: 1px solid #000;
+                    border-radius: 50%;
+                }
+                .line{
+                    width: 142px;
+                    height: 1px;
+                    background: #999;
+                    position: relative;
+                    bottom: 9px;
+                }
+                .active{background: #000;}
+            }
+            h2{
+                font-size: 26px;
+                color: #999;
+                margin: 35px 0;
+            }
+            .checkall{
+                overflow: hidden;
+                #checkall{
+                    // appearance:none;
+                    width: 20px;
+                    height: 20px;
+                    display: inline-block;
+                    border: 1px solid #000;
+                    float: left;
+                    margin-bottom: 10px;
+                }
+               
+                span{
+                    font-size: 14px;
+                    margin-left: 5px;
+                    float: left;
+                }
+                p{
+                    float: left;
+                    position: relative;
+                    font-size: 14px;
+                    margin-left: 18px;
+                    em{
+                        color: rgb(182,51,48);
+                    }
+                }
+            }
+            .shops{
+                width:1100px ;
+                margin-bottom: 10px;
+                border-top: 1px solid #999;
+                border-bottom: 1px solid #999;
+                overflow: hidden;
+                .cartbox{
+                    width: 1050px;
+                    margin: $margin;
+                    margin-top: 10px;
+                    padding-bottom: 10px;
+                    margin-bottom: 10px;
+                    border-bottom: 1px dashed #999;
+                    overflow: hidden;
+                    position: relative;
+                    input{
+                        width: 20px;
+                        height: 20px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                    .imgbox{
+                        width: 160px;
+                        height: 160px;
+                        float: left;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    
+                }
+                .infobox{
+                    float: left;
+                    margin-left: 28px;
+                    margin-top: 30px;
+                    h3{
+                        font-size: 16px;
+                        color: #333;
+                        margin-left: 5px;
+                        margin-bottom: 20px;
+                    }
+                    p{
+                        font-size: 14px;
+                        margin-bottom: 5px;
+                    }
+                }
+                .optionbox{
+                    float: right;
+                    overflow: hidden;
+                    .iconfont{
+                        font-size: 18px;
+                        color: #999;
+                        cursor: pointer;
+                        // float: left;
+                        em{
+                            font-size: 14px;
+                            color: #000;
+                        }
+                    }
+                    .iconfont:nth-of-type(1){
+                        margin-right: 32px;
+                    }
+                    .price{
+                        font-size: 18px;
+                        // float: right;
+                        margin: 20px 0 20px 90px;
+                        color: rgb(182,51,48);
+                    }
+                    .numbox{
+                        span{
+                            font-size: 14px;
+                            margin-right: 15px;
+                        }
+                        .btn{
+                            display: inline-block;
+                            width: 25px;
+                            height: 25px;
+                            font-size: 14px;
+                            line-height: 25px;
+                            text-align: center;
+                            border: 1px solid #999;
+                            background: #fff;
+                            cursor: pointer;
+                        }
+                        b{
+                            display: inline-block;
+                            width: 40px;
+                            height: 25px;
+                            font-size: 14px;
+                            line-height: 25px;
+                            text-align: center;
+                            border-top: 1px solid #999;
+                            border-bottom: 1px solid #999;
+                        }
+                    }
+                }
+                .cartbox:last-of-type{
+                    border-bottom: none;
+                }
+            }
+            .helpbox{
+                width: 300px;
+                height: 155px;
+                padding: 20px;
+                border: 1px solid #b2b2b2;
+                margin-bottom: 10px;
+                h5{
+                    font-size: 18px;
+                    color: #333;
+                }
+                .help{
+                    list-style: circle;
+                    margin-top: 15px;
+                    li{
+                        font-size: 14px;
+                        list-style-type: disc;
+                        list-style-position: inside;
+                        color: #333;
+                        a{color:#333}
+                    }
+                }
+            }
+            .continue_btn{
+                display: block;
+                width: 342px;
+                height: 48px;
+                line-height: 48px;
+                font-size: 18px;
+                text-align: center;
+                color: #333;
+                border: 1px solid #b2b2b2;
+            }
+            .pricebox{
+                margin-top: -200px;
+                float: right;
+                // bottom: -100px;
+                b{
+                    font-size: 24px;
+                    margin-right: 60px;
+                    color: #333;
+                }
+                em{
+                    font-size: 22px;
+                    color: rgb(182,51,48);
+                }
+                span{
+                    @extend em
+                }
+                p{
+                    font-size: 14px;
+                    color: #151515;
+                    line-height: 24px;
+                }
+                p:nth-of-type(2){
+                    color: rgb(182,51,48);
+                }
+                .pay{
+                    width: 198px;
+                    height: 50px;
+                    color: #fff;
+                    font-size: 18px;
+                    text-align: center;
+                    line-height: 50px;
+                    background: #b63330;
+                    margin: 40px 12px 200px 44px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+.botbox{
+    background-color: #000;
+    .bot{
+        width: 1000px;
+        margin: $margin;
+        overflow: hidden;
+        nav{
+            text-align: center;
+            margin-top: 28px;
+            margin-bottom: 10px;
+            a{color:#fff;margin: 0 10px;}
+        }
+      .bot_logo{
+          text-align: center;
+          margin-bottom: 5px;
+      }
+      .botinfo{
+          text-align: center;
+          color:#fff;
+          a{color:#fff;}
+      }
+      .info2{
+          margin:$margin;
+          width: 60px;
+          height: 34px;
+          margin-bottom: 10px;
+          img{
+              width:100%;
+              height: 100%;
+          }
+      }
+    }
+}
+
+// 聊聊吧
+.livechat{
+    width: 88px;
+    height: 88px;
+    position: absolute;
+    right: 0;
+    z-index: 9999;
+    cursor: pointer;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}

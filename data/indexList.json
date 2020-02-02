@@ -1,0 +1,117 @@
+[
+    {
+        "title": "新品热鉴",
+        "child": [
+            {"id":0,
+                "img": "images/new1.png",
+                "info": "【男女同款】Chuck 70",
+                "price": "￥639.00"
+            },
+            {"id":1,
+                "img": "images/new2.png",
+                "info": "【男女同款】RENEW COTTON CHUCK 70",
+                "price": "￥569.00"
+            },
+            {"id":2,
+                "img": "images/new3.png",
+                "info": "【男女同款】Chuck 70",
+                "price": "￥599.00"
+            },
+            {"id":3,
+                "img": "images/new4.png",
+                "info": "【男女同款】One Satr HanByeol",
+                "price": "￥699.00"
+            },
+            {"id":4,
+                "img": "images/new5.png",
+                "info": "【男女同款】One Satr HanByeol",
+                "price": "￥699.00"
+            },
+            {"id":5,
+                "img": "images/new6.png",
+                "info": "【男女同款】Chuck 70",
+                "price": "￥539.00"
+            },
+            {"id":6,
+                "img": "images/new7.png",
+                "info": "【男女同款】Chuck 70",
+                "price": "￥569.00"
+            },
+            {"id":7,
+                "img": "images/new8.png",
+                "info": "【男女同款】Chuck TaylorAll Star",
+                "price": "￥499.00"
+            },
+            {"id":8,
+                "img": "images/new9.png",
+                "info": "【男女同款】Chuck TaylorAll Star",
+                "price": "￥469.00"
+            },
+            {"id":9,
+                "img": "images/new10.png",
+                "info": "【男女同款】RENEW COTTON CHUCK TAYLOR ALL STAR",
+                "price": "￥439.00"
+            },
+            {"id":10,
+                "img": "images/new11.png",
+                "info": "【男女同款】ERX 260",
+                "price": "￥669.00"
+            },
+            {"id":11,
+                "img": "images/new12.png",
+                "info": "【男女同款】Jack Purcell Zip",
+                "price": "￥599.00"
+            },
+            {"id":12,
+                "img": "images/new13.png",
+                "info": "【男女同款】Jack Purcell",
+                "price": "￥539.00"
+            },
+            {"id":13,
+                "img": "images/new14.png",
+                "info": "【男女同款】Jack Purcell Zip",
+                "price": "￥599.00"
+            },
+            {"id":14,
+                "img": "images/new15.png",
+                "info": "【男女同款】Jack Purcell",
+                "price": "￥539.00"
+            },
+            {"id":15,
+                "img": "images/new16.png",
+                "info": "【男女同款】Pro Leather",
+                "price": "￥599.00"
+            }
+        ]
+    },
+    {
+        "title": "街头先型",
+        "child": [
+            {"id":0,
+                "img": "images/fugu.jpg",
+                "info": "复古系列 旧日时光"
+            },
+            {"id":1,
+                "img": "images/jineng.jpg",
+                "info": "机能风上线 挑战无止尽"
+            }
+        ]
+    },
+    {
+        "title": "智库精选 玩转潮流",
+        "child": [
+            {"id":0,
+                "img": "images/PC_3-CTASboot_191120.jpg",
+                "info": "造型兼备 勇战酷寒"
+            },
+            {"id":1,
+                "img": "images/PC_4-JP_191120.jpg",
+                "info": "迷彩印花 城市丛林"
+            },
+            {"id":2,
+                "img": "images/PC_5-Outerwear_191120.jpg",
+                "info": "外套当道 跨越寒冬"
+            }
+        ]
+    }
+]

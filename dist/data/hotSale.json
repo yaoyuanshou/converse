@@ -1,0 +1,176 @@
+[
+    {   "id":0,
+        "title": "男的踩的",
+        "img": "images/boy.jpg",
+        "child": [
+            {"id":0,
+                "img": "images/boy-1.png",
+                "info": "【男女同款】CNY Chuck 70",
+                "price": "￥839.00"
+            },
+            {"id":1,
+                "img": "images/boy-2.png",
+                "info": "【男女同款】Chuck 70",
+                "price": "￥599.00"
+            },
+            {"id":2,
+                "img": "images/boy-3.png",
+                "info": "【男女同款】Chuck 70",
+                "price": "￥699.00"
+            },
+            {"id":3,
+                "img": "images/boy-4.png",
+                "info": "【男女同款】RENEW COTTON CHUCK 70",
+                "price": "￥569.00"
+            },
+            {"id":4,
+                "img": "images/boy-5.png",
+                "info": "【男女同款】Chuck 70",
+                "price": "￥699.00"
+            },
+            {"id":5,
+                "img": "images/boy-6.png",
+                "info": "【男女同款】Chuck Taylor All Star",
+                "price": "￥499.00"
+            },
+            {"id":6,
+                "img": "images/boy-7.png",
+                "info": "【男女同款】CChuck Taylor All Star",
+                "price": "￥469.00"
+            },
+            {"id":7,
+                "img": "images/boy-8.png",
+                "info": "【男女同款】Pro Leather",
+                "price": "￥599.00"
+            }
+        ]
+    },
+    {"id":1,
+        "title": "女的踩的",
+        "img": "images/girl.jpg",
+        "child": [
+            {"id":0,
+                "img": "images/boy-2.png",
+                "info": "【男女同款】Chuck 70",
+                "price": "￥599.00"
+            },
+            {"id":1,
+                "img": "images/girl-2.png",
+                "info": "【男女同款】Chuck 70",
+                "price": "￥569.00"
+            },
+            {"id":2,
+                "img": "images/girl-3.png",
+                "info": "【男女同款】Chuck 70",
+                "price": "￥699.00"
+            },
+            {"id":3,
+                "img": "images/girl-4.png",
+                "info": "【男女同款】Chuck 70",
+                "price": "￥599.00"
+            },
+            {"id":4,
+                "img": "images/girl-5.png",
+                "info": "【男女同款】Chuck 70",
+                "price": "￥599.00"
+            },
+            {"id":5,
+                "img": "images/girl-6.png",
+                "info": "【男女同款】Chuck Taylor All Star",
+                "price": "￥399.00"
+            }
+        ]
+    },
+    {"id":2,
+        "title": "穿的",
+        "img": "images/wear.jpg",
+        "child": [
+            {"id":0,
+                "img": "images/w1.png",
+                "info": "【男的】CONVERE PRINTED ARCHIVE FUNNEL NECK",
+                "price": "￥399.00"
+            },
+            {"id":1,
+                "img": "images/w2.png",
+                "info": "【女的】CONVERSE WOMENS SMILEY GRAPHIC OS HOODIE",
+                "price": "￥399.00"
+            },
+            {"id":2,
+                "img": "images/w3.png",
+                "info": "【女的】CONVERSE WOMENS GRAPHIC OS HOODIE",
+                "price": "￥399.00"
+            },
+            {"id":3,
+                "img": "images/w4.png",
+                "info": "【男的】Converse Star Chevron Wmb PO Hoodie FT",
+                "price": "￥399.00"
+            },
+            {"id":4,
+                "img": "images/w5.png",
+                "info": "【男的】CNY FRENCH TERRY TOP",
+                "price": "￥469.00"
+            },
+            {"id":5,
+                "img": "images/w6.png",
+                "info": "【男的】CNY PADDED OUTERWEAR",
+                "price": "￥899.00"
+            },
+            {"id":6,
+                "img": "images/w7.png",
+                "info": "【男的】CONVERE ARCHIVE TRACK JACKET",
+                "price": "￥499.00"
+            },
+            {"id":7,
+                "img": "images/w8.png",
+                "info": "【男的】CONVERSE TWISETED VARSITY KNIT BOMBER",
+                "price": "469.00"
+            }
+        ]
+    },
+    {"id":3,
+        "title": "戴的",
+        "img": "images/bag.jpg",
+        "child": [
+            {"id":0,
+                "img": "images/b1.png",
+                "info": "【男女同款】Swap Out Backpack",
+                "price": "￥299.00"
+            },
+            {"id":1,
+                "img": "images/b2.png",
+                "info": "【男女同款】Cross Body 2",
+                "price": "￥199.00"
+            },
+            {"id":2,
+                "img": "images/b3.png",
+                "info": "【男女同款】Hip Pack",
+                "price": "￥239.00"
+            },
+            {"id":3,
+                "img": "images/b4.png",
+                "info": "【男女同款】Tipoff Chuck Patch Baseball HPS",
+                "price": "￥109.00"
+            },
+            {"id":4,
+                "img": "images/b5.png",
+                "info": "【男女同款】CAVVAS TOTE",
+                "price": "￥259.00"
+            },
+            {"id":5,
+                "img": "images/b6.png",
+                "info": "【男女同款】Smile Strapback LFU",
+                "price": "￥199.00"
+            },
+            {"id":6,
+                "img": "images/b7.png",
+                "info": "【男女同款】Lock Up Baseball HPS",
+                "price": "￥109.00"
+            },
+            {"id":7,
+                "img": "images/b8.png",
+                "info": "【男女同款】Mussette",
+                "price": "￥159.00"
+            }
+        ]
+    }
+]

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品详情</title>
+    <link rel="shortcut icon" href="../images/logo-icon.png">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../css/goodsDetails.min.css">
+    <script src="../js/require.js" async="true" defer data-main="../js/main_goodsDetails"></script>
+</head>
+<body>
+    <div class="topbox">
+        <div class="top">
+            <a href="../index.html" class="logo"><img src="../images/logo.png" alt=""></a>
+            <div class="top_right">
+               <div class="login"><a title="登录/注册" id="top_login">登录</a><span>/</span><a title="登录/注册" id="top_reg">注册</a></div>
+               <div class="login_icon iconfont" title="登录/注册">&#xe699;</div>
+               <a class="shop_car" title="购物车" href="carts.html">购物车</a>
+               <div class="shop_car_icon" title="购物车">0</div>
+               <div class="chat_icon iconfont" title="聊天">&#xe660;</div>
+               <div class="search_icon iconfont" title="搜索">&#xe610;</div>
+               <div class="help_icon iconfont" title="帮助">&#xeae2;</div>
+            </div>
+        </div>
+       <!-- 弹出界面 -->
+       <div class="hidden_top">
+        <div class="login" id="hidden_top_login" style="display: none;">
+            <div class="login_left">
+                <h1>还未注册？</h1>
+                <div class="login_block">
+                    注册账户<span>></span>
+                </div>
+            </div>
+            <div class="login_right">
+                <h1>已经成为会员？</h1>
+                <input type="text" placeholder="邮箱/手机">
+                <p class="login_phone_info" style="margin: 0 0 10px 0; font-size: 14px; display: none;">s</p>
+                <input type="text" placeholder="账户密码">
+                <p class="login_pwd_info" style="margin: 0 0 10px 0; font-size: 14px; display: none;">s</p>
+                <input type="text" class="checkcode" placeholder="验证码"><span class="codebox">sr</span>
+                <p class="checkcode_info" style="margin: 0 0 10px 0; font-size: 14px; display: none;">s</p>
+                <div class="login_waring">
+                    <input type="checkbox" name="" id="check">
+                    <div class="info">
+                        一旦登录，即表明您同意匡威更新的 <a href="">隐私政策</a>和<a href="">使用规则</a>
+                    </div>
+                </div>
+                <p class="login_info" style="margin: 0 0 10px 0; font-size: 14px; display: none;">s</p>
+                <div class="login_btn">登录</div>
+                <div class="forget">
+                    <input type="checkbox" name="" id="" checked="checked">
+                    <span>记住用户名</span>
+                    <a href="">忘记密码?</a>
+                </div>
+            </div>
+        </div>
+        <div class="register" style="display: none;">
+            <div class="reg_left">
+                <div>手机号码 <span>*</span></div>
+                <input type="text" value="135xxxx333">
+                <p class="reg_phone_info" style="margin: 0 0 10px 0; font-size: 14px; display: none;">s</p>
+                <div>输入密码<span>*</span></div>
+                <input type="text" value="密码至少为6位字符">
+                <p class="reg_phone_info" style="margin: 0 0 10px 0; font-size: 14px;display: none; ">s</p>
+            </div>
+            <div class="reg_cen">
+                <div>邮箱<span>*</span></div>
+                <input type="text" value="example@coverse.com">
+                <p class="reg_phone_info" style="margin: 0 0 10px 0; font-size: 14px; display: none;">s</p>
+                <div>确认密码<span>*</span></div>
+                <input type="text" value="请在此输入密码">
+                <p class="reg_phone_info" style="margin: 0 0 10px 0; font-size: 14px;display: none; ">s</p>
+                <div>验证码<span>*</span></div>
+                <input type="text" value="请在此输入验证码" class="checkcode"><span class="codebox">ssss</span>
+                <p class="checkcode_info" style="margin: 0 0 10px 0; font-size: 14px;display: none; ">s</p>
+            </div>
+            <div class="reg_right">
+                <div>性别<span>*</span></div>
+                <input type="checkbox" name="" id="" checked='checked'><span>男的</span>
+                <input type="checkbox" name="" id=""><span>女的</span>
+                <div>出生(年-月-日)<span>*</span></div>
+                <select name="" id="">
+                    <option value="">2020</option>
+                    <option value="">1998</option>
+                    <option value="">1997</option>
+                </select>
+                <select name="" id="">
+                    <option value="">01</option>
+                    <option value="">02</option>
+                    <option value="">03</option>
+                </select>
+                <select name="" id="">
+                    <option value="">25</option>
+                    <option value="">26</option>
+                    <option value="">27</option>
+                </select>
+                <div class="check">
+                    <input type="checkbox" name="" id=""><span> 一旦创建账户，即表明您同意匡威更新的隐私<br>政策和使用政策</span>
+                </div>
+                <p class="reg_phone_info" style="margin: 0 0 10px 0; font-size: 14px; display: none;">s</p>
+                <div class="reg_btn">
+                    注册账户
+                </div>
+            </div>
+        </div>
+        <div class="search" style="display: none;">
+            <input type="text" value="想找什么随便搜">
+            <i class="iconfont">&#xe610;</i>
+            <i class="iconfont search_close">&#xe62e;</i>
+        </div>
+    </div>
+    </div>
+    <!-- topEnd -->
+    <!-- navStart -->
+    <div class="navbox">
+        <div class="nav">
+                <a href="" class="boys">男的</a>
+                <p class="iconfont">&#xe665;</p>
+                <a href="" class="girls">女的</a>
+                <p class="iconfont">&#xe665;</p>
+                <a href="" class="children">儿童</a>
+                <p class="iconfont">&#xe665;</p>
+                <a href="">联名合作款</a>
+                <p class="iconfont">&#xe665;</p>
+                <a href="">店铺分布</a>
+                <p class="iconfont">&#xe665;</p>
+        </div>
+    </div>
+    <!-- nav选项卡 -->
+    <div class="navlist">
+        <div class="navlists" style="display: none;">
+            <div class="cont">
+               <!--  <dl>
+                    <dt>
+                        <img src="images/boy1.jpg">
+                    </dt>
+                    <dd>踩的</dd>
+                </dl> -->
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- cont内容区 -->
+    <div class="contbox">
+        <div class="cont">
+            <div class="conttop">
+                <div class="conttop_left">
+                    <div class="icon">
+                        <aside><i class="iconfont">&#xe61f;</i><span>分享</span></aside>
+                        <aside><i class="iconfont">&#xe64d;</i><span>加入收藏(25)</span></aside>
+                        <aside><i class="iconfont">★★★★★</i><span>评论此商品</span></aside>
+                    </div>
+                    <div class="bigimg">
+                        <!-- <img src="../images/boy-2.png" alt=""> -->
+                    </div>
+                </div>
+                <div class="conttop_cen">
+                    <!-- <h2 class="info">[男女同款]商品标题信息</h2>
+                    <h2 class="price">价格</h2> -->
+                    <div class="smallimg"> 
+                        <div class="mark"></div> 
+                        <!-- <img src="../images/boy-2.png" alt=""> -->
+                    </div>
+                  
+                </div>
+                <div class="conttop_right">
+                    <h3>尺码换算器</h3>
+                    <aside><span>请输入您的尺码</span>
+                        <select name="" id="">
+                            <option value="">35</option>
+                            <option value="">36</option>
+                            <option value="">37</option>
+                            <option value="">38</option>
+                        </select>
+                    </aside>
+                    <aside><span>数量</span>
+                        <select name="" id="">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                        </select>
+                    </aside>
+                        <p class="buyNow">立即购买</p>
+                    <a class="add_carts">
+                        <p>+ 添加到购物车</p>
+                    </a>
+                </div>
+            </div>
+            <div class="price_desc">
+                <h2>价格说明（此说明仅当出现价格比较时有效）</h2>
+                <p>划线价格：划线的价格可能是商品的专柜吊牌价或正品零售价指导价或该商品的曾经展示过的销售价等，仅供您参考。</p>
+                <p>未划线价格：未划线的价格是商品在官网上的销售标价，具体的成交价格可能因为会员使用优惠券发生变化，最终以订单结算页价格为准。</p>
+            </div>
+            <div class="block_btn">Chuck 70</div>
+            <div class="title">
+                <div class="list1"></div>
+                <h2>您或许会喜欢</h2>
+                <div class="list2"></div>
+            </div>
+            <div class="likeGoods">
+                <p><</p>
+                <a href="goodsDetails.html?id=4&amp;index=images/new5.png"><dl>
+                    <dt>
+                        <img src="../images/new5.png">
+                    </dt>
+                    <dd>【男女同款】One Satr HanByeol</dd>
+                    <dd>￥699.00</dd>
+                </dl></a>
+                <a href="goodsDetails.html?id=12&amp;index=images/new13.png"><dl>
+                    <dt>
+                        <img src="../images/new13.png">
+                    </dt>
+                    <dd>【男女同款】Jack Purcell</dd>
+                    <dd>￥539.00</dd>
+                </dl></a>
+                <a href="goodsDetails.html?id=0&amp;index=images/b1.png" style="display: inline;"><dl>
+                    <dt>
+                        <img src="../images/b1.png">
+                    </dt>
+                    <dd>【男女同款】Swap Out Backpack</dd>
+                    <dd>￥299.00</dd>
+                </dl></a>
+                <a href="goodsDetails.html?id=3&amp;index=images/b4.png" style="display: inline;"><dl>
+                    <dt>
+                        <img src="../images/b4.png">
+                    </dt>
+                    <dd>【男女同款】Tipoff Chuck</dd>
+                    <dd>￥109.00</dd>
+                </dl></a>
+                
+                <p>></p>
+            </div>
+            <div class="title">
+                <div class="list1" style="width: 500px;"></div>
+                <h2>0 评论</h2>
+                <div class="list2"></div>
+            </div>
+            <div class="comment">
+                <p >★★★★★</p>
+                <p>5.0</p>
+            </div>
+            <div class="title">
+                <div class="list1"></div>
+                <h2>您最近查看的商品</h2>
+                <div class="list2"></div>
+            </div>
+            <div class="nearGoods">
+                <a href="goodsDetails.html?id=4&amp;index=images/new5.png"><dl>
+                    <dt>
+                        <img src="../images/new5.png">
+                    </dt>
+                    <dd>【男女同款】One Satr HanByeol</dd>
+                    <dd>￥699.00</dd>
+                </dl></a>
+                <a href="goodsDetails.html?id=12&amp;index=images/new13.png"><dl>
+                    <dt>
+                        <img src="../images/new13.png">
+                    </dt>
+                    <dd>【男女同款】Jack Purcell</dd>
+                    <dd>￥539.00</dd>
+                </dl></a>
+                <a href="goodsDetails.html?id=0&amp;index=images/b1.png" style="display: inline;"><dl>
+                    <dt>
+                        <img src="../images/b1.png">
+                    </dt>
+                    <dd>【男女同款】Swap Out Backpack</dd>
+                    <dd>￥299.00</dd>
+                </dl></a>
+                <a href="goodsDetails.html?id=3&amp;index=images/b4.png" style="display: inline;"><dl>
+                    <dt>
+                        <img src="../images/b4.png">
+                    </dt>
+                    <dd>【男女同款】Tipoff Chuck</dd>
+                    <dd>￥109.00</dd>
+                </dl></a>
+                
+            </div>
+        </div>
+    </div>
+    <!-- contEnd -->
+    <!-- botNavStart -->
+    <div class="botnavbox">
+        <div class="line"></div>
+        <div class="botnav">
+            <div class="botnav_top">
+                <dl>
+                    <dt>男的</dt>
+                    <dd class="spec">CHUCK TAYLOR ALL STAR</dd>
+                    <dd class="spec">CONVERSE CONS</dd>
+                    <dd  class="spec">JACK PURCELL</dd>
+                    <dd  class="spec end">CHUCK II</dd>
+                    <dd>踩的</dd>
+                    <dd>穿的</dd>
+                    <dd>戴的</dd>
+                    <dd>优惠</dd>
+                </dl>
+                <dl>
+                    <dt>女的</dt>
+                    <dd  class="spec">CHUCK TAYLOR ALL STAR</dd>
+                    <dd  class="spec">CONVERSE CONS</dd>
+                    <dd  class="spec">JACK PURCELL</dd>
+                    <dd  class="spec end">CHUCK II</dd>
+                    <dd>踩的</dd>
+                    <dd>穿的</dd>
+                    <dd>戴的</dd>
+                    <dd>优惠</dd>
+                </dl>
+                <dl>
+                    <dt>儿童</dt>
+                    <dd  class="spec">CHUCK TAYLOR ALL STAR</dd>
+                    <dd  class="spec end_child">CONVERSE CONS</dd>
+                    <dd>踩的</dd>
+                    <dd>穿的</dd>
+                    <dd>戴的</dd>
+                    <dd>优惠</dd>
+                </dl>
+                <dl>
+                    <dt>GLOBAL</dt>
+                    <dd  class="spec">CONVERSE GLOBAL SITES</dd>
+                </dl>
+            </div>
+            <div class="botnav_bot">
+                <dl>
+                    <dt>我的账户</dt>
+                    <dd>会员中心</dd>
+                    <dd>现有订单</dd>
+                    <dd>过去订单</dd>
+                    <dd>退换货</dd>
+                    <dd>账户设置</dd>
+                    <dd>地址簿</dd>
+                    <dd>我的优惠券</dd>
+                    <dd>我的收藏</dd>
+                    <dd>我的评论</dd>
+                </dl>
+                <dl>
+                    <dt>帮助和购物指南</dt>
+                    <dd>账户</dd>
+                    <dd>订单</dd>
+                    <dd>尺码</dd>
+                    <dd>退货和退款</dd>
+                    <dd>换货</dd>
+                    <dd>配送</dd>
+                    <dd>联系我们</dd>
+                    <dd>常见问题</dd>
+                </dl>
+                <dl>
+                    <dt>NIKE</dt>
+                    <dd  class="spec">NIKE+</dd>
+                    <dd  class="spec">JORDAN</dd>
+                </dl>
+            </div>
+            
+        </div>
+    </div>
+    <!-- botNavEnd -->
+    <div class="botbox">
+        <div class="bot">
+            <nav>
+                <a href="">关于我们</a>
+                <a href="">帮助和购物指南</a>
+                <a href="">隐私政策</a>
+                <a href="">使用规则</a>
+            </nav>
+            <div class="bot_logo"> <img src="../images/bot_logo.png" alt=""></div>
+           <div class="botinfo">
+               @匡威体育用品（中国）有限公司 保留所有权利&nbsp;&nbsp;&nbsp;&nbsp;
+               <a href="">沪ICP备11044134号-2</a>&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/beiAn.png" alt="">沪公网安备 31011002001667号&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/business-license.png" alt="">电子营业执照&nbsp;&nbsp;&nbsp;&nbsp;公司证照
+           </div>
+           <div class="info2"><img src="../images/cautionIcon.png" alt=""></div>
+        </div>
+    </div>
+
+    <!-- 聊聊吧 -->
+    <div class="livechat" id="livechat"><img src="../images/livechat.png" alt=""></div>
+</body>
+</html>
