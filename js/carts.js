@@ -183,35 +183,40 @@ define(["jquery","cookie"],function($){
     //商品结算
     function payAll(){
         $(".pricebox .pay").click(function(){
-            if($(".shops input[name='bechecked']").length == 0){
-                alert("您还没有选择要付款的商品")
-            }else{
-                alert("付款成功");
-                $(".shops input[name='bechecked']").each(function(){
-                    var imgSrc = $(this).siblings(".imgbox").find("img").attr("src");
-                    var cookieArr = JSON.parse($.cookie("goods"))
-                    for(var i = 0; i < cookieArr.length;i++){
-                            if(cookieArr[i].imgSrc == imgSrc){
-                            cookieArr.splice(i,1);
-                            $(this).parents(".cartbox").remove();
-                           
-                            break;  
+            if($(".top_right .login").html() == "匡威欢迎您"){
+                if($(".shops input[name='bechecked']").length == 0){
+                    alert("您还没有选择要付款的商品")
+                }else{
+                    alert("付款成功");
+                    $(".shops input[name='bechecked']").each(function(){
+                        var imgSrc = $(this).siblings(".imgbox").find("img").attr("src");
+                        var cookieArr = JSON.parse($.cookie("goods"))
+                        for(var i = 0; i < cookieArr.length;i++){
+                                if(cookieArr[i].imgSrc == imgSrc){
+                                cookieArr.splice(i,1);
+                                $(this).parents(".cartbox").remove();
+                               
+                                break;  
+                            }
                         }
-                    }
-                    if(!$.cookie("goods").length || JSON.parse($.cookie("goods")).length == 1){
-                        $.cookie("goods",null)
-                        isCont()
-                    }else{
-                        // alert(JSON.parse($.cookie("goods")).length)
-                        $.cookie("goods",JSON.stringify(cookieArr),{expires:7})
-                    }
-                    // isCont();
-                    checkLen()
-                })
-
+                        if(!$.cookie("goods").length || JSON.parse($.cookie("goods")).length == 1){
+                            $.cookie("goods",null)
+                            isCont()
+                        }else{
+                            // alert(JSON.parse($.cookie("goods")).length)
+                            $.cookie("goods",JSON.stringify(cookieArr),{expires:7})
+                        }
+                        // isCont();
+                        checkLen()
+                    })
+    
+                }
+               
+                totalPrice()
+            }else{
+                alert("您需要先登录才能付款哦")
             }
-           
-            totalPrice()
+            
         })
     }
         

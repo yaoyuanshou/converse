@@ -160,7 +160,9 @@ $margin:0 auto;
                     line-height: 40px;
                     text-align: center;
                     font-weight: 900;
-                    // font-size: 16px;
+                    &:hover{
+                        cursor: pointer;
+                    }
                 }
                 .login_waring{
                     margin-top: 15px;
@@ -185,8 +187,11 @@ $margin:0 auto;
                     line-height: 38px;
                     text-align: center;
                     border: 1px solid #000;
-                    background: rgb(204,204,204);
+                    background: #000;
                     margin-bottom: 5px;
+                    &:hover{
+                        cursor: pointer;
+                    }
                 }
                 .forget{
                     input{
@@ -243,6 +248,7 @@ $margin:0 auto;
                 .codebox{
                     display:inline-block;
                     width: 100px;
+                    // margin:30px 0 0 40px;
                     margin-left: 40px;
                     height: 40px;
                     background-color: #000;
@@ -295,7 +301,7 @@ $margin:0 auto;
     line-height: 38px;
     text-align: center;
     width: 300px;
-    background: rgb(204,204,204);
+    background: rgb(0,0,0);
     border: 1px solid #000;
                 }
             }

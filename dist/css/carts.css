@@ -192,6 +192,8 @@ img {
           line-height: 40px;
           text-align: center;
           font-weight: 900; }
+          .topbox .hidden_top .login .login_right .codebox:hover, .topbox .hidden_top .top .top_right .login_icon .login_right .codebox:hover, .topbox .top .top_right .hidden_top .login_icon .login_right .codebox:hover, .topbox .hidden_top .top .top_right .shop_car .login_right .codebox:hover, .topbox .top .top_right .hidden_top .shop_car .login_right .codebox:hover, .topbox .hidden_top .top .top_right .shop_car_icon .login_right .codebox:hover, .topbox .top .top_right .hidden_top .shop_car_icon .login_right .codebox:hover, .topbox .hidden_top .top .top_right .chat_icon .login_right .codebox:hover, .topbox .top .top_right .hidden_top .chat_icon .login_right .codebox:hover, .topbox .hidden_top .top .top_right .search_icon .login_right .codebox:hover, .topbox .top .top_right .hidden_top .search_icon .login_right .codebox:hover, .topbox .hidden_top .top .top_right .help_icon .login_right .codebox:hover, .topbox .top .top_right .hidden_top .help_icon .login_right .codebox:hover {
+            cursor: pointer; }
         .topbox .hidden_top .login .login_right .login_waring, .topbox .hidden_top .top .top_right .login_icon .login_right .login_waring, .topbox .top .top_right .hidden_top .login_icon .login_right .login_waring, .topbox .hidden_top .top .top_right .shop_car .login_right .login_waring, .topbox .top .top_right .hidden_top .shop_car .login_right .login_waring, .topbox .hidden_top .top .top_right .shop_car_icon .login_right .login_waring, .topbox .top .top_right .hidden_top .shop_car_icon .login_right .login_waring, .topbox .hidden_top .top .top_right .chat_icon .login_right .login_waring, .topbox .top .top_right .hidden_top .chat_icon .login_right .login_waring, .topbox .hidden_top .top .top_right .search_icon .login_right .login_waring, .topbox .top .top_right .hidden_top .search_icon .login_right .login_waring, .topbox .hidden_top .top .top_right .help_icon .login_right .login_waring, .topbox .top .top_right .hidden_top .help_icon .login_right .login_waring {
           margin-top: 15px;
           margin-bottom: 50px; }
@@ -212,8 +214,10 @@ img {
           line-height: 38px;
           text-align: center;
           border: 1px solid #000;
-          background: #cccccc;
+          background: #000;
           margin-bottom: 5px; }
+          .topbox .hidden_top .login .login_right .login_btn:hover, .topbox .hidden_top .top .top_right .login_icon .login_right .login_btn:hover, .topbox .top .top_right .hidden_top .login_icon .login_right .login_btn:hover, .topbox .hidden_top .top .top_right .shop_car .login_right .login_btn:hover, .topbox .top .top_right .hidden_top .shop_car .login_right .login_btn:hover, .topbox .hidden_top .top .top_right .shop_car_icon .login_right .login_btn:hover, .topbox .top .top_right .hidden_top .shop_car_icon .login_right .login_btn:hover, .topbox .hidden_top .top .top_right .chat_icon .login_right .login_btn:hover, .topbox .top .top_right .hidden_top .chat_icon .login_right .login_btn:hover, .topbox .hidden_top .top .top_right .search_icon .login_right .login_btn:hover, .topbox .top .top_right .hidden_top .search_icon .login_right .login_btn:hover, .topbox .hidden_top .top .top_right .help_icon .login_right .login_btn:hover, .topbox .top .top_right .hidden_top .help_icon .login_right .login_btn:hover {
+            cursor: pointer; }
         .topbox .hidden_top .login .login_right .forget input, .topbox .hidden_top .top .top_right .login_icon .login_right .forget input, .topbox .top .top_right .hidden_top .login_icon .login_right .forget input, .topbox .hidden_top .top .top_right .shop_car .login_right .forget input, .topbox .top .top_right .hidden_top .shop_car .login_right .forget input, .topbox .hidden_top .top .top_right .shop_car_icon .login_right .forget input, .topbox .top .top_right .hidden_top .shop_car_icon .login_right .forget input, .topbox .hidden_top .top .top_right .chat_icon .login_right .forget input, .topbox .top .top_right .hidden_top .chat_icon .login_right .forget input, .topbox .hidden_top .top .top_right .search_icon .login_right .forget input, .topbox .top .top_right .hidden_top .search_icon .login_right .forget input, .topbox .hidden_top .top .top_right .help_icon .login_right .forget input, .topbox .top .top_right .hidden_top .help_icon .login_right .forget input {
           width: 22px;
           height: 22px;
@@ -293,7 +297,7 @@ img {
         line-height: 38px;
         text-align: center;
         width: 300px;
-        background: #cccccc;
+        background: black;
         border: 1px solid #000; }
     .topbox .hidden_top .search {
       width: 1196px;

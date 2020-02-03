@@ -35,20 +35,20 @@
             </div>
             <div class="login_right">
                 <h1>已经成为会员？</h1>
-                <input type="text" placeholder="邮箱/手机">
+                <input type="text" placeholder="邮箱/手机" class="phone">
                 <p class="login_phone_info" style="margin: 0 0 10px 0; font-size: 14px; display: none;">s</p>
-                <input type="text" placeholder="账户密码">
+                <input type="text" placeholder="账户密码" class="pwd">
                 <p class="login_pwd_info" style="margin: 0 0 10px 0; font-size: 14px; display: none;">s</p>
-                <input type="text" class="checkcode" placeholder="验证码"><span class="codebox">sr</span>
+                <input type="text" class="checkcode" placeholder="验证码" ><span class="codebox">sr</span>
                 <p class="checkcode_info" style="margin: 0 0 10px 0; font-size: 14px; display: none;">s</p>
                 <div class="login_waring">
-                    <input type="checkbox" name="" id="check">
+                    <input type="checkbox" name="" id="check" checked="checked">
                     <div class="info">
                         一旦登录，即表明您同意匡威更新的 <a href="">隐私政策</a>和<a href="">使用规则</a>
                     </div>
                 </div>
                 <p class="login_info" style="margin: 0 0 10px 0; font-size: 14px; display: none;">s</p>
-                <div class="login_btn">登录</div>
+                <div class="login_btn" id="login_btn">登录</div>
                 <div class="forget">
                     <input type="checkbox" name="" id="" checked="checked">
                     <span>记住用户名</span>
@@ -59,47 +59,47 @@
         <div class="register" style="display: none;">
             <div class="reg_left">
                 <div>手机号码 <span>*</span></div>
-                <input type="text" value="135xxxx333">
+                <input type="text" value="135xxxx333" class="phone">
                 <p class="reg_phone_info" style="margin: 0 0 10px 0; font-size: 14px; display: none;">s</p>
                 <div>输入密码<span>*</span></div>
-                <input type="text" value="密码至少为6位字符">
-                <p class="reg_phone_info" style="margin: 0 0 10px 0; font-size: 14px;display: none; ">s</p>
+                <input type="text" value="密码至少为6位字符" class="pwd">
+                <p class="reg_pwd_info" style="margin: 0 0 10px 0; font-size: 14px;display: none; ">s</p>
             </div>
             <div class="reg_cen">
                 <div>邮箱<span>*</span></div>
-                <input type="text" value="example@coverse.com">
-                <p class="reg_phone_info" style="margin: 0 0 10px 0; font-size: 14px; display: none;">s</p>
+                <input type="text" value="example@coverse.com" class="email">
+                <p class="reg_email_info" style="margin: 0 0 10px 0; font-size: 14px; display: none;">s</p>
                 <div>确认密码<span>*</span></div>
-                <input type="text" value="请在此输入密码">
-                <p class="reg_phone_info" style="margin: 0 0 10px 0; font-size: 14px;display: none; ">s</p>
+                <input type="text" value="请在此输入密码" class="repwd">
+                <p class="reg_repwd_info" style="margin: 0 0 10px 0; font-size: 14px;display: none; ">s</p>
                 <div>验证码<span>*</span></div>
                 <input type="text" value="请在此输入验证码" class="checkcode"><span class="codebox">ssss</span>
                 <p class="checkcode_info" style="margin: 0 0 10px 0; font-size: 14px;display: none; ">s</p>
             </div>
             <div class="reg_right">
                 <div>性别<span>*</span></div>
-                <input type="checkbox" name="" id="" checked='checked'><span>男的</span>
-                <input type="checkbox" name="" id=""><span>女的</span>
+                <input type="checkbox" name="" id="sexboy" checked='checked'><span>男的</span>
+                <input type="checkbox" name="" id="sexgirl"><span>女的</span>
                 <div>出生(年-月-日)<span>*</span></div>
-                <select name="" id="">
+                <select name="" id="year">
                     <option value="">2020</option>
                     <option value="">1998</option>
                     <option value="">1997</option>
                 </select>
-                <select name="" id="">
+                <select name="" id="month">
                     <option value="">01</option>
                     <option value="">02</option>
                     <option value="">03</option>
                 </select>
-                <select name="" id="">
+                <select name="" id="day">
                     <option value="">25</option>
                     <option value="">26</option>
                     <option value="">27</option>
                 </select>
                 <div class="check">
-                    <input type="checkbox" name="" id=""><span> 一旦创建账户，即表明您同意匡威更新的隐私<br>政策和使用政策</span>
+                    <input type="checkbox" name="" id="check_rule"><span> 一旦创建账户，即表明您同意匡威更新的隐私<br>政策和使用政策</span>
                 </div>
-                <p class="reg_phone_info" style="margin: 0 0 10px 0; font-size: 14px; display: none;">s</p>
+                <p class="reg_btn_info" style="margin: 0 0 10px 0; font-size: 14px; display: none;">s</p>
                 <div class="reg_btn">
                     注册账户
                 </div>
