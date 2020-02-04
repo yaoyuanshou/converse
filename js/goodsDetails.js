@@ -45,7 +45,7 @@ define(["jquery","cookie"], function($){
             $(".conttop_cen").css("marginLeft","0")
         })
     }
-
+   
     //点击购买
     function buyNow(){
         $(".buyNow").click(function(){
