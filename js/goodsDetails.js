@@ -1,51 +1,40 @@
 define(["jquery","cookie"], function($){
     //放大镜效果
-    function magGlass(){
-        $(".smallimg").hover(function(){
-            $(".icon").css("display","none")
-            $(".bigimg,.mark").css("display","block")
-            $(".conttop_cen").css("marginLeft","200px")
-            //拖拽
-            $(".mark").mousedown(function(e){
-                var offsetX = e.clientX - $('.mark').offset().left - 100;
-                var offsetY = e.clientY - $(".mark").offset().top - 100;
+        function magGlass(){
+            $(".conttop_cen .smallimg").mouseover(function(){
+                $(".conttop_left .icon").css("display","none");
+                $(".conttop_left .bigimg,.mark").css("display","block")
+                $(".conttop_cen").css("marginLeft","205px");
                 $(document).mousemove(function(e){
-                    // alert(5)
-                    var l = e.clientX - offsetX - 500;
-                    var t = e.clientY - offsetY - 350;
-                    if(l <= 0){
-                        l = 0;
+                    var offsetX = e.pageX-450;
+                    var offsetY = e.pageY-390;
+                    if(offsetX < 0){
+                        offsetX = 0
                     }
-                    if(l >= 304){
-                        l = 304;
+                    if(offsetX > 379){
+                        offsetX = 379
                     }
-                    if(t <= 0){
-                        t = 0;
+                    if(offsetY < 0){
+                        offsetY = 0;
                     }
-                    if(t >= 305){
-                        t = 305;
+                    if(offsetY > 280){
+                        offsetY = 280
                     }
                     $(".mark").css({
-                        left:l,
-                        top:t
+                        left:offsetX,
+                        top:offsetY
                     })
                     $(".bigimg img").css({
-                        left:l * -2,
-                        top:t * -2
+                        left:-2 * offsetX,
+                        top:-2*offsetY
                     })
                 })
+            }).mouseleave(function(){
+                $(".conttop_left .icon").css("display","block");
+                $(".conttop_left .bigimg,.mark").css("display","none")
+                $(".conttop_cen").css("marginLeft","0")
             })
-
-            $(document).mouseup(function(){
-                $(document).off("mousemove")
-            })
-        },function(){
-            $(".icon").css("display","block")
-            $(".bigimg,.mark").css("display","none")
-            $(".conttop_cen").css("marginLeft","0")
-        })
-    }
-   
+        }
     //点击购买
     function buyNow(){
         $(".buyNow").click(function(){
