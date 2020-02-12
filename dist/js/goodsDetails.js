@@ -7,7 +7,7 @@ define(["jquery","cookie"], function($){
                 $(".conttop_cen").css("marginLeft","205px");
                 $(document).mousemove(function(e){
                     var offsetX = e.pageX-450;
-                    var offsetY = e.pageY-390;
+                    var offsetY = e.pageY-330;
                     if(offsetX < 0){
                         offsetX = 0
                     }
@@ -25,8 +25,8 @@ define(["jquery","cookie"], function($){
                         top:offsetY
                     })
                     $(".bigimg img").css({
-                        left:-2 * offsetX,
-                        top:-2*offsetY
+                        left:-1.5 * offsetX,
+                        top:-1.5*offsetY
                     })
                 })
             }).mouseleave(function(){
